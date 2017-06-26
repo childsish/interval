@@ -34,7 +34,7 @@ B.overlaps(C); // true
 
 Custom position types.
 
-```
+```cpp
 class GenomicPosition {
 public:
     const std::string chromosome;
@@ -60,7 +60,7 @@ A.overlaps(B); // true
 
 The `get_subsequence` function.
 
-```
+```cpp
 Interval<int> interval{3, 6};
 interval.get_subsequence<std::string>("abcdefghij"); // "def"
 interval.get_subsequence<std::vector<int>>({0, 1, 2, 3, 4, 5, 6, 7, 8, 9}); // {3, 4, 5}
