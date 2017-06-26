@@ -115,7 +115,7 @@ namespace {
         T get_absolute_position(const T &relative_position) const {
             if (relative_position < T{} || relative_position > stop - start) {
                 std::stringstream buffer;
-                buffer << "Relatve position " << relative_position << " not contained within interval " << *this << ".";
+                buffer << "Relative position " << relative_position << " not contained within interval " << *this << ".";
                 throw std::runtime_error(buffer.str());
             }
             return start - relative_position;
