@@ -7,7 +7,8 @@ add_subdirectory(googletest)
 
 
 add_executable(test_units
-        test_Interval.cpp)
+        test_Interval.cpp
+        test_IntervalSet.cpp)
 target_include_directories(
         test_units PRIVATE
         ${gtest_SOURCE_DIR}/include
